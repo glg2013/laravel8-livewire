@@ -12,6 +12,15 @@ class NoteIndex extends Component
 
     protected $paginationTheme = 'bootstrap';
 
+    protected $listeners = [
+        'noteCreated'
+    ];
+
+    public function noteCreated()
+    {
+        session()->flash('success', '留言成功！');
+    }
+
     public function render()
     {
         return view('livewire.note-index', [
