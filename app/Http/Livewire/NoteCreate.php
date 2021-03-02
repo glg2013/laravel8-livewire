@@ -21,7 +21,8 @@ class NoteCreate extends Component
                 'note' => $this->note
             ]);
 
-            $this->note = '';
+            //$this->note = '';
+            $this->reset(['note']);
 
             $this->emit('noteCreated');
         }
