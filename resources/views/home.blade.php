@@ -23,3 +23,13 @@
     </div>
 </div>
 @endsection
+
+@section('alertjs')
+{{--<script>--}}
+{{--    Swal.fire(--}}
+{{--        'Good job!',--}}
+{{--        'You clicked the button!',--}}
+{{--        'success'--}}
+{{--    )--}}
+{{--</script>--}}
+@endsection
