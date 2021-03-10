@@ -82,9 +82,18 @@
         </main>
     </div>
 
+    <!-- livewire -->
     <livewire:scripts />
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <!-- livewire-alert livewire的插件-->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script> -->
+    <script src="{{ asset('vendor/sweetalert/sweetalert.all.js') }}"></script>
     <x-livewire-alert::scripts />
+
+    <!-- sweetalert2 前端直接调用js -->
     @yield('alertjs')
+
+    <!-- realrashid/sweet-alert laravel的插件 -->
+    @include('sweetalert::alert')
 </body>
 </html>
