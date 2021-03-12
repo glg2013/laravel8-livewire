@@ -1,6 +1,6 @@
 <div class="row row-cols-2 align-items-center">
     <div class="media mb-4 col-10">
-        <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 64x64"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect></svg>
+        <img class="img-responsive img-circle mr-3" src="{{ $content->user->avatar }}" alt=" " width="100px" height="100px">
         <div class="media-body">
             <h5 class="mt-0">{{ $content->user->name }}</h5>
             <h6 class="small">发表于{{ $content->created_at->diffForHumans() }}</h6>

@@ -3,12 +3,10 @@
 namespace App\Http\Livewire\Note;
 
 use App\Models\Notes;
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Livewire\Component;
 
 class Single extends Component
 {
-    use AuthorizesRequests;
 
     public $content;
 
