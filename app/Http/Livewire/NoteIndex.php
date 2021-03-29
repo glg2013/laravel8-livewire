@@ -18,7 +18,17 @@ class NoteIndex extends Component
 
     public function noteSaved()
     {
-        session()->flash('success', '留言成功！');
+        //session()->flash('success', '留言成功！');
+        $this->alert('success', '留言成功!', [
+            'position' =>  'center',
+            'timer' =>  3000,
+            'toast' =>  false,
+            'text' =>  '',
+            'confirmButtonText' =>  '确定',
+            'cancelButtonText' =>  'Cancel',
+            'showCancelButton' =>  false,
+            'showConfirmButton' =>  true,
+        ]);
     }
 
     public function render()
